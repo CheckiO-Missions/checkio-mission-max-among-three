@@ -1,0 +1,42 @@
+<!-- Describe task in general -->
+
+<p>
+    Biorąc pod uwagę trzy liczby całkowite, proszę określić, która z nich jest największa.  
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Trzy liczby całkowite <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Sposób użycia:</strong>
+    <i>ta funkcja może być używana w różnych algorytmach i obliczeniach, w których należy wybrać najwyższą wartość spośród wielu opcji.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Warunek wstępny:</strong>
+    <ul>
+    <li>-<i><sup>109</sup> &lt;= a, b, c &lt;=<sup>109</sup></i>.</li>
+    </ul>
+</p>
