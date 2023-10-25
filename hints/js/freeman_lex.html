@@ -1,0 +1,86 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission.
+    </div>
+    <div class="answer">
+        <p>
+            Catch an idea 💡! This mission is very easy actually, especially with solution I offer you. Just use built-in function to find maximum in a sequence.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, what should I start from?
+    </div>
+    <div class="answer">
+        <p>
+            Read about and use built-in <a target="_blank" href="https://www.w3schools.com/jsref/jsref_max.asp">Math.max()</a> method.
+        </p>
+        <pre class="brush: javascript">
+Math.max(a, b, c)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        So, how my final solution should look like?
+    </div>
+    <div class="answer">
+        <p>
+            You just need to return the result of the hint expression and wrap your code into function expression. Using type hints for input and output data are highly recommended.
+        </p>
+        <p>Here is the whole solution:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    return Math.max(a, b, c);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Javascript Hero!
+    </div>
+    <div class="answer">
+        <p>Sure, grab it!</p>
+        <p>
+            For three numbers it's just checking two conditions.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    if (a >= b && a >= c) return a;
+    if (b >= a && b >= c) return b;
+    return c;
+}
+        </pre>
+        </div>
+        <p>
+            Using <b class="code">reduce</b> method which makes the same checking and keep the biggest element on every step.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    return [a, b, c].reduce((max, curr) => (curr > max ? curr : max), Number.MIN_SAFE_INTEGER);
+}
+        </pre>
+        </div>
+        <p>Click <b>Best Solutions</b> at mission menu and see a lot of other interesting solutions!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Thanks! I know and understand more now! Everything works fine!
+    </div>
+    <div class="answer">
+        Glad to hear it 👍!
+    </div>
+</div>
+</body>
