@@ -1,0 +1,86 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Я не уявляю, як почати вирішувати цю місію.
+    </div>
+    <div class="answer">
+        <p>
+            Ловіть ідею 💡! Ця місія насправді дуже проста, особливо з рішенням, яке я вам пропоную. Просто використовуйте вбудовану функцію для пошуку максимуму в послідовності.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Гаразд, з чого почати?
+    </div>
+    <div class="answer">
+        <p>
+            Прочитайте про вбудований метод <a target="_blank" href="https://www.w3schools.com/jsref/jsref_max.asp">Math.max()</a> і використовуйте його.
+        </p>
+        <pre class="brush: javascript">
+Math.max(a, b, c)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Отже, як має виглядати моє кінцеве рішення?
+    </div>
+    <div class="answer">
+        <p>
+            Вам просто потрібно повернути результат виразу-підказки і обернути свій код у вираз функції. Наполегливо рекомендується використовувати підказки типів для вхідних і вихідних даних.
+        </p>
+        <p>Ось і все рішення:</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    return Math.max(a, b, c);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Покажіть мені більше рішень!<br />
+        тому що я хочу бути справжнім 🥇 Героєм Javascript!
+    </div>
+    <div class="answer">
+        <p>Звичайно, хапай!</p>
+        <p>
+            Для трьох чисел це просто перевірка двох умов.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    if (a>= b && a>= c) return a;
+    if (b>= a && b>= c) return b;
+    return c;
+}
+        </pre>
+        </div>
+        <p>
+            Використовуючи метод <b class="code">reduce</b>, який робить таку ж перевірку і зберігає найбільший елемент на кожному кроці.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    return [a, b, c].reduce((max, curr) => (curr> max? curr: max), Number.MIN_SAFE_INTEGER);
+}
+        </pre>
+        </div>
+        <p>Натисніть <b>Best Solutions</b> в меню завдання і побачите багато інших цікавих розв'язків!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Дякую! Тепер я знаю і розумію більше! Все працює чудово!
+    </div>
+    <div class="answer">
+        Радий це чути 👍!
+    </div>
+</div>
+</body>
