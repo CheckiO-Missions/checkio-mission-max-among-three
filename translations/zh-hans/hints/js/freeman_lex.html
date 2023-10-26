@@ -1,0 +1,86 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        我不知道如何开始解决这个任务。
+    </div>
+    <div class="answer">
+        <p>
+            想个办法💡！这个任务其实很简单，尤其是我提供的解决方案。只需使用内置函数找出序列中的最大值即可。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        好吧，我应该从什么开始呢？
+    </div>
+    <div class="answer">
+        <p>
+            阅读并使用内置<a target="_blank" href="https://www.w3schools.com/jsref/jsref_max.asp">Math.max()</a> 方法。
+        </p>
+        <pre class="brush: javascript">
+Math.max(a, b, c)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        那么，我的最终解决方案应该是怎样的呢？
+    </div>
+    <div class="answer">
+        <p>
+            您只需返回提示表达式的结果，并将代码封装成函数表达式即可。强烈建议对输入和输出数据使用类型提示。
+        </p>
+        <p>以下是整个解决方案：</p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    return Math.max(a, b, c);
+}
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        告诉我更多解决方案！<br />
+        因为我想成为真正的 🥇 Javascript 英雄！
+    </div>
+    <div class="answer">
+        <p>当然，抓紧时间！</p>
+        <p>
+            对于三个数字，只需检查两个条件。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    if (a>= b && a>= c) return a;
+    if (b>= a && b>= c) return b;
+    return c;
+}
+        </pre>
+        </div>
+        <p>
+            使用<b class="code">reduce</b> 方法进行同样的检查，并在每一步中保留最大的元素。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: javascript">
+function maxOfThree(a: number, b: number, c: number): number {
+
+    return [a, b, c].reduce((max, curr) => (curr> max? curr: max), Number.MIN_SAFE_INTEGER);
+}
+        </pre>
+        </div>
+        <p>点击任务菜单中的<b>Best Solutions</b> ，可以看到很多其他有趣的解决方案！</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        谢谢！我现在知道并理解得更多了！一切正常！
+    </div>
+    <div class="answer">
+        很高兴听到这个消息 👍！
+    </div>
+</div>
+</body>
