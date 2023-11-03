@@ -1,0 +1,88 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Aufgabe beginnen soll.
+    </div>
+    <div class="answer">
+        <p>
+            Lassen Sie sich etwas einfallen 💡! Diese Aufgabe ist eigentlich sehr einfach, vor allem mit der Lösung, die ich Ihnen anbiete. Verwenden Sie einfach die eingebaute Funktion, um das Maximum in einer Sequenz zu finden.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, womit soll ich anfangen?
+    </div>
+    <div class="answer">
+        <p>
+            Informieren Sie sich über die integrierte Funktion <a target="_blank" href="https://www.w3schools.com/python/ref_func_max.asp">max()</a> und verwenden Sie sie.
+        </p>
+        <pre class="brush: python">
+max(a, b, c)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Wie sollte also meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>
+            Sie müssen nur das Ergebnis des Hinweisausdrucks zurückgeben und Ihren Code in einen Funktionsausdruck verpacken. Die Verwendung von Typ-Hinweisen für Eingabe- und Ausgabedaten wird dringend empfohlen.
+        </p>
+        <p>Hier ist die gesamte Lösung:</p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def max_of_three(a: int, b: int, c: int) -> int:
+
+    return max(a, b, c)
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Zeigen Sie mir mehr Lösungen!<br />
+        denn ich will ein echter 🥇 Python Ninnjaa sein!
+    </div>
+    <div class="answer">
+        <p>Klar, schnapp sie dir!</p>
+        <p>
+            Bei drei Zahlen werden nur zwei Bedingungen überprüft.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def max_of_three(a: int, b: int, c: int) -> int:
+
+    if a>= b and a>= c:
+        return a
+    if b>= a and b>= c:
+        return b
+    return c
+        </pre>
+        </div>
+        <p>
+            Verwenden Sie die Funktion <b class="code">reduce</b> aus dem eingebauten Modul <b class="code">functools</b>, die dieselbe Prüfung durchführt und das größte Element bei jedem Schritt beibehält.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+from functools import reduce
+
+
+def max_of_three(a: int, b: int, c: int) -> int:
+    
+    return reduce(lambda x, y: x if x> y else y, (a, b, c))
+        </pre>
+        </div>
+        <p>Klicken Sie auf <b>Best Solutions</b> im Missionsmenü und sehen Sie sich viele andere interessante Lösungen an!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Vielen Dank! Ich weiß und verstehe jetzt mehr! Alles funktioniert bestens!
+    </div>
+    <div class="answer">
+        Freut mich zu hören 👍!
+    </div>
+</div>
+</body>
