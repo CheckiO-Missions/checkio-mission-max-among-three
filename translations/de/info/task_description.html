@@ -1,0 +1,42 @@
+<!-- Describe task in general -->
+
+<p>
+    Bestimmen Sie bei drei ganzen Zahlen, welche die größte ist.  
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Wie sie verwendet wird:</strong>
+    <i>diese Funktion kann in verschiedenen Algorithmen und Berechnungen verwendet werden, bei denen der höchste Wert unter mehreren Optionen ausgewählt werden muss.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <ul>
+    <li>-<i><sup>109</sup> &lt;= a, b, c &lt;=<sup>109</sup></i>.</li>
+    </ul>
+</p>
